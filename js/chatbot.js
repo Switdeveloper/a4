@@ -133,14 +133,19 @@ async function sendMessage() {
       throw new Error('Network response was not ok');
     }
     
-    const data = await response.json();
-    
-    // Hide typing indicator
-    hideTyping();
-    
-    // Add bot response
-    const botMessage = data.response || data.message || "I'm sorry, I couldn't process that. Please try again.";
-    addMessage(botMessage, 'bot');
+     const data = await response.json();
+     
+     // Hide typing indicator
+     hideTyping();
+     
+     // Add bot response - handle both object and array formats
+     let botMessage;
+     if (Array.isArray(data) && data.length > 0) {
+       botMessage = data[0].output || data[0].response || data[0].message || "I'm sorry, I couldn't process that. Please try again.";
+     } else {
+       botMessage = data.response || data.message || "I'm sorry, I couldn't process that. Please try again.";
+     }
+     addMessage(botMessage, 'bot');
     
   } catch (error) {
     console.error('Chatbot error:', error);
