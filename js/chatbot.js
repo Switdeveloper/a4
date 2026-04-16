@@ -1,6 +1,6 @@
 // Chatbot Configuration
 const CHATBOT_CONFIG = {
-  webhookUrl: 'https://n8n-cfdeljun.us-west-1.clawcloudrun.com/webhook-test/ced5d0d8-1d54-4723-b33e-5003fb6d68a9',
+  webhookUrl: 'https://n8n-cfdeljun.us-west-1.clawcloudrun.com/webhook/ced5d0d8-1d54-4723-b33e-5003fb6d68a9',
   botName: 'Freedman Assistant',
   welcomeMessage: "Hi! I'm your Freedman Insurance assistant. How can I help you today?"
 };
