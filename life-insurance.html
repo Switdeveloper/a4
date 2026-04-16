@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance in Florida - FreedmanBrokerInsurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-blue': '#0d152e',
+                        'primary-red': '#c91414',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; }
+        h1, h2, h3, h4, h5, h6, .serif { font-family: 'Playfair Display', serif; }
+        .bg-dark-blue { background-color: #0d152e; }
+        .text-dark-blue { color: #0d152e; }
+        .bg-primary-red { background-color: #c91414; }
+        .text-primary-red { color: #c91414; }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="js/load-partials.js"></script>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="header-container"></div>
+
+    <section class="relative bg-gray-100 pt-16 pb-32 overflow-hidden">
+    <!-- Background image placeholder (Family) -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Family Background" class="w-full h-full object-cover object-center">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="max-w-2xl text-white">
+            <div class="flex items-center text-xs font-bold tracking-wider text-primary-red mb-6 uppercase">
+                <i class="fas fa-heart mr-2 text-white/70"></i> <span class="text-white/70 mx-2 hover:text-white cursor-pointer">HOME</span> / <span class="ml-2">LIFE INSURANCE</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-[1.1] serif">
+                Life Insurance<br>
+                <span class="text-primary-red">in Florida</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-xl">
+                Protect your family's financial future with affordable life insurance from FreedmanBrokerInsurance Insurance. Our licensed agents help Florida families find the right term, whole, or universal life coverage — starting from just $15/month.
+            </p>
+
+            <div class="mb-10">
+                <a href="#" class="bg-primary-red text-white px-10 py-4 rounded font-bold text-lg hover:bg-red-800 transition inline-flex items-center justify-center">
+                    Get a Quote <i class="fas fa-chevron-right ml-3 text-sm"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center text-sm text-gray-300 space-y-4 sm:space-y-0 sm:space-x-8">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-primary-red text-xl mr-2"></i>
+                    <span><strong class="text-white">Coverage from $15/month</strong> with term</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex text-yellow-400 text-sm mr-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span><strong class="text-white">5.0/5.0</strong> Customer Reviews</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Angled bottom border -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg class="relative block w-full h-[60px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 120 0 0 1200 120z" class="fill-[#0d152e]"></path>
+        </svg>
+    </div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-white py-12 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <i class="fas fa-users text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">500K+</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Protected Families</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-layer-group text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">40+</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Life Carriers</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-piggy-bank text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">$15</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Starting/Month</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-star text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">5.0</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Customer Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">WHY CHOOSE US</span>
+    <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">Trusted Florida Life Insurance Experts</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">We make protecting your family simple, affordable, and stress-free. Compare quotes from top life insurers and find the perfect coverage for your needs and budget.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Term Life Insurance</h3>
+        <p class="text-gray-500 text-sm">Affordable coverage for a specific period — 10, 20, or 30 years. Ideal for young families, mortgage protection, and income replacement.</p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-permanent-residence"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Whole Life Insurance</h3>
+        <p class="text-gray-500 text-sm">Permanent coverage that builds cash value over time. A long-term financial asset that provides lifetime protection and estate planning benefits.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-sync-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Universal Life Insurance</h3>
+        <p class="text-gray-500 text-sm">Flexible premiums and adjustable death benefits that adapt to your changing financial needs and life circumstances.</p>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Final Expense Insurance</h3>
+        <p class="text-gray-500 text-sm">Affordable coverage to handle funeral costs and end-of-life expenses, protecting your family from financial burden during difficult times.</p>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-stethoscope"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">No Medical Exam Options</h3>
+        <p class="text-gray-500 text-sm">Simplified issue and guaranteed issue policies available — no medical exam required for qualifying applicants. Coverage in days, not weeks.</p>
+      </div>
+      
+      <!-- Card 6 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Bilingual Agents</h3>
+        <p class="text-gray-500 text-sm">Our Spanish-speaking agents help Florida's diverse communities understand and choose the right life insurance for their family's needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Coverage Highlights -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">COVERAGE OPTIONS</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">What's Covered in Your Life Policy</h2>
+      <p class="text-gray-600">Life insurance provides financial protection for your loved ones. Different policies offer various benefits to match your goals.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-calendar-check text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Term Life Insurance</h3>
+          <p class="text-gray-600 text-sm">Pure protection for a set period (10, 20, or 30 years). Pays death benefit if you pass away during the term. Most affordable option.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-infinity text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Whole Life Insurance</h3>
+          <p class="text-gray-600 text-sm">Permanent coverage that lasts your entire life. Includes guaranteed death benefit, cash value growth, and fixed premiums.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-adjust text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Universal Life Insurance</h3>
+          <p class="text-gray-600 text-sm">Flexible premium and adjustable death benefit. Cash value grows based on interest rates; you can adjust coverage as needed.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-cross text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Final Expense Insurance</h3>
+          <p class="text-gray-600 text-sm">Small, affordable policy to cover funeral costs and final medical bills. Easier qualification, often no medical exam required.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-home text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Mortgage Protection Insurance</h3>
+          <p class="text-gray-600 text-sm">Pays off your mortgage if you die before it's paid off. Ensures your family can stay in their home without financial stress.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-user-shield text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Accidental Death & Dismemberment</h3>
+          <p class="text-gray-600 text-sm">Additional coverage that pays if you die or suffer dismemberment from an accident. Often added as a rider to existing policies.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-child text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Children's Life Insurance Riders</h3>
+          <p class="text-gray-600 text-sm">Add coverage for your children at a low cost. Provides a death benefit if the unexpected happens and can often be converted to adult coverage later.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-file-invoice text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Waiver of Premium Rider</h3>
+          <p class="text-gray-600 text-sm">Waives your premium payments if you become disabled and unable to work. Keeps your coverage active during tough times.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-procedures text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Accelerated Death Benefit</h3>
+          <p class="text-gray-600 text-sm">Allows you to access a portion of the death benefit if diagnosed with a terminal illness. Use funds for medical expenses or quality of life.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-dollar-sign text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Return of Premium Option</h3>
+          <p class="text-gray-600 text-sm">If you outlive your term policy, get back all the premiums you paid. More expensive, but offers savings if you survive the term.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-clipboard-check text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">No Medical Exam Policies</h3>
+          <p class="text-gray-600 text-sm">Simplified issue life insurance requires only health questions; no physical exam. Coverage decisions often in minutes. Lower face amounts typically.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-award text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Guaranteed Issue Life Insurance</h3>
+          <p class="text-gray-600 text-sm">No medical questions or exams. Acceptance guaranteed (typically ages 50-85). Smaller face amounts, but guaranteed coverage for final expenses.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a href="#" class="bg-primary-red text-white px-8 py-3.5 rounded font-bold hover:bg-red-800 transition inline-block">
+        Get a Free Quote
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">TESTIMONIALS</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">What Our Customers Say</h2>
+      <p class="text-gray-600">Join thousands of satisfied Florida families who trust us with their life insurance needs.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"Our agent made getting life insurance so easy. We needed coverage to protect our kids and mortgage. Got a $500k term policy for under $40/month. Peace of mind achieved!"</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Michael T.</div>
+            <div class="text-xs text-gray-500">Tampa, FL</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"At 65, I thought life insurance would be too expensive. The agent found a whole life policy I can afford that will leave something for my grandchildren. Excellent service!"</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Barbara K.</div>
+            <div class="text-xs text-gray-500">Miami, FL</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"I needed final expense insurance quickly. Got approved without a medical exam and the policy is in force. The Spanish-speaking agent was very helpful and patient."</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Robert S.</div>
+            <div class="text-xs text-gray-500">Orlando, FL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA with Form -->
+<section class="bg-[#0d152e] text-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="w-full md:w-1/2">
+        <span class="inline-block border border-gray-600 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-white/5">FREE QUOTE</span>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 serif">Protect Your Family Today</h2>
+        <p class="text-gray-300 mb-8 text-lg">Life insurance from $15/month. Get a free, no-obligation quote from a licensed Florida agent. No medical exam options available.</p>
+        
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Compare 40+ top life insurance carriers</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Term, Whole, Universal & Final Expense</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Bilingual agents available (English/Spanish)</span>
+          </div>
+        </div>
+        
+        <a href="tel:7865012059" class="bg-primary-red text-white px-8 py-4 rounded font-bold hover:bg-red-800 transition inline-flex items-center justify-center text-lg">
+          <i class="fas fa-phone-alt mr-3"></i> Call 1-800-FREEDOM
+        </a>
+      </div>
+      
+      <div class="w-full md:w-5/12">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 text-gray-800">
+          <h3 class="text-2xl font-bold mb-6 serif text-dark-blue">Get Your Free Life Quote</h3>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Full Name</label>
+              <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="John Doe">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Email Address</label>
+              <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="john@example.com">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold mb-2">Phone</label>
+                <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="(555) 123-4567">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold mb-2">Date of Birth</label>
+                <input type="date" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Insurance Type</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>Term Life Insurance</option>
+                <option>Whole Life Insurance</option>
+                <option>Universal Life Insurance</option>
+                <option>Final Expense Insurance</option>
+                <option>I'm not sure - need guidance</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Desired Coverage Amount</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>$50,000 - $100,000</option>
+                <option>$100,000 - $250,000</option>
+                <option>$250,000 - $500,000</option>
+                <option>$500,000 - $1,000,000</option>
+                <option>$1,000,000+</option>
+                <option>Not sure - need advice</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Tobacco Use</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>Non-tobacco user</option>
+                <option>Tobacco user (cigarettes, vaping, etc.)</option>
+                <option>Former tobacco user (quit 12+ months ago)</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-primary-red text-white py-4 rounded font-bold hover:bg-red-800 transition flex items-center justify-center">
+              Get My Free Quote <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+            <p class="text-xs text-gray-500 text-center">By submitting, you agree to our <a href="#" class="underline">Privacy Policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">FAQ</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">Frequently Asked Questions</h2>
+      <p class="text-gray-600">Quick answers to common questions about life insurance.</p>
+    </div>
+    
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">What is the difference between term and whole life insurance?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p><strong>Term life</strong> provides coverage for a specific period (e.g., 10, 20, or 30 years) and is generally the most affordable. It pays a death benefit only if you pass away during the term. <strong>Whole life</strong> provides permanent coverage for your entire life, includes guaranteed cash value growth, and has fixed premiums. It's more expensive but builds financial assets over time.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 2 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">How much life insurance do I need?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>A general rule is 10–15 times your annual income. But also consider: outstanding debts (mortgage, car loans), future expenses (college tuition for children), replacement of your income for your family, and final expenses. Our agents can help you calculate the right amount based on your specific situation, using needs analysis tools.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 3 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Do I need a medical exam to get life insurance?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Not always. Many carriers offer "no-exam" or simplified issue life insurance policies, especially for younger, healthier applicants or for lower coverage amounts (typically up to $100k–$500k). Guaranteed issue policies require no medical exam or health questions but have graded death benefits and lower coverage limits (usually up to $25k–$50k).</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 4 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">How quickly can I get life insurance coverage?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>It depends on the policy type and underwriting. Simplified issue or guaranteed issue policies can issue coverage in as little as 24–48 hours after application and approval. Fully underwritten policies that require a medical exam typically take 2–6 weeks. No-exam options are great when you need fast coverage.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 5 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Can I change my beneficiaries later?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Yes, unless you have designated an irrevocable beneficiary (which requires their consent to change), you can change your beneficiaries at any time by submitting a beneficiary change form to your insurance company. It's a good idea to review beneficiaries annually or after major life events like marriage, divorce, or birth of a child.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 6 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Is life insurance taxable in Florida?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Generally, life insurance death benefits paid to beneficiaries are not considered taxable income by the IRS, so your family receives the full amount tax-free. However, if the policy has a cash value component and you surrender it for more than your basis (total premiums paid), that gain may be taxable. Estate taxes may also apply to very large policies (over $12.06 million in 2022).</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 7 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Can I get life insurance with health issues?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Yes, many people with health conditions can still qualify for life insurance. While some health issues may increase premiums or result in modified coverage, options like simplified issue or guaranteed issue policies are available regardless of health. Conditions like controlled hypertension, well-managed diabetes, or a history of cancer in remission may still qualify for standard or substandard rates with fully underwritten policies. Our agents work with carriers that specialize in various health profiles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div id="footer-container"></div>
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Insurance in Florida - FreedmanBrokerInsurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-blue': '#0d152e',
+                        'primary-red': '#c91414',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; }
+        h1, h2, h3, h4, h5, h6, .serif { font-family: 'Playfair Display', serif; }
+        .bg-dark-blue { background-color: #0d152e; }
+        .text-dark-blue { color: #0d152e; }
+        .bg-primary-red { background-color: #c91414; }
+        .text-primary-red { color: #c91414; }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="js/load-partials.js"></script>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="header-container"></div>
+
+    <section class="relative bg-gray-100 pt-16 pb-32 overflow-hidden">
+    <!-- Background image placeholder (Car) -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Car Background" class="w-full h-full object-cover object-center">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="max-w-2xl text-white">
+            <div class="flex items-center text-xs font-bold tracking-wider text-primary-red mb-6 uppercase">
+                <i class="fas fa-car mr-2 text-white/70"></i> <span class="text-white/70 mx-2 hover:text-white cursor-pointer">HOME</span> / <span class="ml-2">AUTO INSURANCE</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-[1.1] serif">
+                Auto Insurance<br>
+                <span class="text-primary-red">in Florida</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-xl">
+                Florida drivers face unique challenges — high traffic, severe weather, and rising premiums. FreedmanBrokerInsurance Insurance compares rates from 40+ top carriers to find you the lowest auto insurance rate, saving you an average of $1,200/year.
+            </p>
+
+            <div class="mb-10">
+                <a href="#" class="bg-primary-red text-white px-10 py-4 rounded font-bold text-lg hover:bg-red-800 transition inline-flex items-center justify-center">
+                    Get a Quote <i class="fas fa-chevron-right ml-3 text-sm"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center text-sm text-gray-300 space-y-4 sm:space-y-0 sm:space-x-8">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-primary-red text-xl mr-2"></i>
+                    <span><strong class="text-white">Bundle auto + home</strong> and save up to 15%</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex text-yellow-400 text-sm mr-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span><strong class="text-white">4.9/5.0</strong> Google Reviews</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Angled bottom border -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg class="relative block w-full h-[60px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 120 0 0 1200 120z" class="fill-[#0d152e]"></path>
+        </svg>
+    </div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-white py-12 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <i class="fas fa-users text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">500K+</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Happy Clients</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-handshake text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">40+</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Insurance Carriers</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-piggy-bank text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">$1.2K</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Avg. Savings</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-star text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">4.9</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Google Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">WHY CHOOSE US</span>
+    <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">Trusted Florida Auto Insurance Experts</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">We make protecting your vehicle simple, affordable, and stress-free. Compare quotes from top carriers and find the perfect coverage for your driving needs.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-search-dollar"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Compare 40+ Carriers</h3>
+        <p class="text-gray-500 text-sm">We instantly compare rates from multiple top-rated insurers to find you the best coverage at the lowest price.</p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-dollar-sign"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Save Up to $1,200</h3>
+        <p class="text-gray-500 text-sm">Florida drivers save an average of $1,200 per year on auto insurance by switching to FreedmanBrokerInsurance.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-file-contract"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">SR-22 Filing</h3>
+        <p class="text-gray-500 text-sm">Need an SR-22? We file it quickly and affordably, same day in most cases. Specializing in high-risk drivers.</p>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-language"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Bilingual Agents</h3>
+        <p class="text-gray-500 text-sm">All our agents speak English and Spanish — serving Miami's diverse communities with excellent customer service.</p>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">100+ Florida Locations</h3>
+        <p class="text-gray-500 text-sm">Walk into any of our 100+ locations across Florida or get a quote online in minutes. We're always nearby.</p>
+      </div>
+      
+      <!-- Card 6 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">24/7 Claims Support</h3>
+        <p class="text-gray-500 text-sm">Our dedicated claims team is available around the clock to help you when you need assistance most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Coverage Highlights -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">COVERAGE OPTIONS</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">What's Covered in Your Auto Policy</h2>
+      <p class="text-gray-600">A standard auto insurance policy includes these coverages, with optional add-ons for tailored protection.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-car-crash text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Bodily Injury Liability</h3>
+          <p class="text-gray-600 text-sm">Covers medical expenses, lost wages, and legal fees if you're at fault in an accident that injures another person.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-home text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Property Damage Liability</h3>
+          <p class="text-gray-600 text-sm">Pays for damage you cause to someone else's vehicle or property (buildings, fences, etc.).</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-user-injured text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Personal Injury Protection (PIP)</h3>
+          <p class="text-gray-600 text-sm">Florida's no-fault coverage. Pays for medical expenses and lost wages for you and passengers, regardless of fault.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-user-shield text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Uninsured/Underinsured Motorist</h3>
+          <p class="text-gray-600 text-sm">Protects you if you're hit by a driver without sufficient insurance or who flees the scene.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-tools text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Collision Coverage</h3>
+          <p class="text-gray-600 text-sm">Pays for repairs to your vehicle after an accident, regardless of who was at fault.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-umbrella text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Comprehensive Coverage</h3>
+          <p class="text-gray-600 text-sm">Covers damage from non-collision events like theft, vandalism, fire, natural disasters, and falling objects.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-ambulance text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Medical Payments</h3>
+          <p class="text-gray-600 text-sm">Pays for medical expenses for you and your passengers, regardless of fault, beyond what PIP covers.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-car-side text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Rental Reimbursement</h3>
+          <p class="text-gray-600 text-sm">Covers the cost of a rental car while your vehicle is being repaired after a covered loss.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-wrench text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Roadside Assistance</h3>
+          <p class="text-gray-600 text-sm">Emergency services like towing, tire changes, jump starts, and lockout assistance when you're stranded.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-file-signature text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Gap Insurance</h3>
+          <p class="text-gray-600 text-sm">Pays the difference between what you owe on your loan/lease and the car's actual cash value if totaled.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-exclamation-triangle text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">SR-22 Filing</h3>
+          <p class="text-gray-600 text-sm">We provide SR-22 certificate filing for high-risk drivers who need to reinstate their license.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-car text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Non-Owner Auto Insurance</h3>
+          <p class="text-gray-600 text-sm">Coverage for drivers who don't own a vehicle but need liability protection when renting or borrowing cars.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a href="#" class="bg-primary-red text-white px-8 py-3.5 rounded font-bold hover:bg-red-800 transition inline-block">
+        Get a Free Quote
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">TESTIMONIALS</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">What Our Customers Say</h2>
+      <p class="text-gray-600">Join thousands of satisfied Florida drivers who trust us with their auto insurance needs.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"Saved over $800 on my auto insurance! The agent found me an amazing rate with great coverage. Highly recommend!"</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Carlos M.</div>
+            <div class="text-xs text-gray-500">Miami, FL</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"Great service, fast quotes. Got my SR-22 filed same day. They really understand what Florida drivers need."</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Sarah L.</div>
+            <div class="text-xs text-gray-500">Orlando, FL</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"Been with them for 2 years. Always great rates and bilingual agents make it easy. I've referred all my friends."</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">James R.</div>
+            <div class="text-xs text-gray-500">Tampa, FL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA with Form -->
+<section class="bg-[#0d152e] text-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="w-full md:w-1/2">
+        <span class="inline-block border border-gray-600 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-white/5">FREE QUOTE</span>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 serif">Protect Your Vehicle Today</h2>
+        <p class="text-gray-300 mb-8 text-lg">Get a free, no-obligation quote in minutes. Our agents are ready to help you find the perfect coverage at the best price.</p>
+        
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Compare 40+ top auto insurance carriers</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Bundle auto + home and save up to 15%</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Expert agents available 24/7</span>
+          </div>
+        </div>
+        
+        <a href="tel:7865012059" class="bg-primary-red text-white px-8 py-4 rounded font-bold hover:bg-red-800 transition inline-flex items-center justify-center text-lg">
+          <i class="fas fa-phone-alt mr-3"></i> Call 1-800-FREEDOM
+        </a>
+      </div>
+      
+      <div class="w-full md:w-5/12">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 text-gray-800">
+          <h3 class="text-2xl font-bold mb-6 serif text-dark-blue">Get Your Free Quote</h3>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Full Name</label>
+              <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="John Doe">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Email Address</label>
+              <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="john@example.com">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold mb-2">Phone</label>
+                <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="(555) 123-4567">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold mb-2">ZIP Code</label>
+                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="33101">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Insurance Type</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>Auto Insurance</option>
+                <option>Home Insurance</option>
+                <option>Home + Auto Bundle</option>
+                <option>Motorcycle Insurance</option>
+                <option>Business Insurance</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-primary-red text-white py-4 rounded font-bold hover:bg-red-800 transition flex items-center justify-center">
+              Get My Free Quote <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+            <p class="text-xs text-gray-500 text-center">By submitting, you agree to our <a href="#" class="underline">Privacy Policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">FAQ</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">Frequently Asked Questions</h2>
+      <p class="text-gray-600">Quick answers to common questions about auto insurance in Florida.</p>
+    </div>
+    
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">What is the minimum auto insurance required in Florida?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Florida requires $10,000 in Personal Injury Protection (PIP) and $10,000 in Property Damage Liability (PDL). However, experts recommend higher liability limits for better protection, especially if you have significant assets.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 2 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">How much does car insurance cost in Florida?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>The average cost in Florida is around $2,200-$2,800 per year, but rates vary widely based on your driving history, vehicle type, age, credit score, and location. We shop 40+ carriers to find you the best rate for your situation.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 3 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Can I get same-day auto insurance in Florida?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Yes! In most cases, we can provide same-day coverage. Once you accept a quote and complete payment, your policy documents and ID cards are available immediately, either digitally or by email.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 4 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Does FreedmanBrokerInsurance offer SR-22 filing?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Yes, we specialize in SR-22 filings for drivers with suspended licenses or DUI offenses. We file with Florida DMV the same day in most cases, and we work with multiple carriers to keep rates affordable.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 5 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Do you offer non-owner car insurance?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Yes, we provide non-owner SR-22 insurance for drivers who don't own a vehicle but need liability coverage to reinstate their license or drive rental/borrowed cars. Great for occasional drivers.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 6 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Can I bundle auto and home insurance?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Absolutely! Bundling your auto and home insurance can save you up to 15% on your premiums. It also simplifies your billing and gives you a single point of contact for both policies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div id="footer-container"></div>
+</body>
+</html>

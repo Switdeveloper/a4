@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Insurance in Florida - FreedmanBrokerInsurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-blue': '#0d152e',
+                        'primary-red': '#c91414',
+                        'accent-blue': '#1d3557',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; }
+        h1, h2, h3, h4, h5, h6, .serif { font-family: 'Playfair Display', serif; }
+        .bg-dark-blue { background-color: #0d152e; }
+        .text-dark-blue { color: #0d152e; }
+        .bg-primary-red { background-color: #c91414; }
+        .text-primary-red { color: #c91414; }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="js/load-partials.js"></script>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="header-container"></div>
+
+    <section class="relative bg-gray-100 pt-16 pb-32 overflow-hidden">
+    <!-- Background image placeholder (Flooded area) -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Flood Background" class="w-full h-full object-cover object-center">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="max-w-2xl text-white">
+            <div class="flex items-center text-xs font-bold tracking-wider text-primary-red mb-6 uppercase">
+                <i class="fas fa-water mr-2 text-white/70"></i> <span class="text-white/70 mx-2 hover:text-white cursor-pointer">HOME</span> / <span class="ml-2">FLOOD INSURANCE</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-[1.1] serif">
+                Flood Insurance<br>
+                <span class="text-primary-red">in Florida</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-xl">
+                Florida is the most flood-prone state in the US. Standard homeowners insurance does NOT cover flood damage. FreedmanBrokerInsurance offers both NFIP-backed and private flood insurance to protect your home and belongings from rising waters — starting from just $400/year.
+            </p>
+
+            <div class="mb-10">
+                <a href="#" class="bg-primary-red text-white px-10 py-4 rounded font-bold text-lg hover:bg-red-800 transition inline-flex items-center justify-center">
+                    Get a Quote <i class="fas fa-chevron-right ml-3 text-sm"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center text-sm text-gray-300 space-y-4 sm:space-y-0 sm:space-x-8">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-primary-red text-xl mr-2"></i>
+                    <span><strong class="text-white">NFIP & Private</strong> options available</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex text-yellow-400 text-sm mr-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span><strong class="text-white">5.0/5.0</strong> Customer Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Angled bottom border -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg class="relative block w-full h-[60px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 120 0 0 1200 120z" class="fill-[#0d152e]"></path>
+        </svg>
+    </div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-white py-12 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <i class="fas fa-home text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">500K+</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Homes Protected</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-layer-group text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">40+</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Flood Carriers</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-piggy-bank text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">$400</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Starting/Year</div>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-star text-primary-red text-3xl mb-4"></i>
+        <div class="text-4xl font-bold text-dark-blue">5.0</div>
+        <div class="text-sm text-gray-600 uppercase tracking-wider">Customer Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">WHY CHOOSE US</span>
+    <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">Trusted Florida Flood Insurance Experts</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">Florida faces the highest flood risk in the nation. We make getting the right flood coverage simple — comparing both NFIP and private options to secure your property.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-building"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">NFIP-Backed Coverage</h3>
+        <p class="text-gray-500 text-sm">We offer National Flood Insurance Program (NFIP) policies backed by the federal government for maximum security and stability.</p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-crown"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Private Flood Insurance</h3>
+        <p class="text-gray-500 text-sm">Private flood insurance often offers broader coverage, higher limits, and faster claims processing than NFIP, sometimes at lower rates.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Flood Zone Expertise</h3>
+        <p class="text-gray-500 text-sm">Our agents understand Florida's complex flood zone maps (FIRMs) and help you determine the right coverage for your specific flood risk.</p>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-wind"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Storm Surge Protection</h3>
+        <p class="text-gray-500 text-sm">Hurricane storm surge is the #1 cause of flood damage in Florida. Our policies ensure you're protected before storm season hits.</p>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-couch"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Contents Coverage</h3>
+        <p class="text-gray-500 text-sm">Protect your furniture, electronics, clothing, and valuables from flood damage with comprehensive contents coverage options.</p>
+      </div>
+      
+      <!-- Card 6 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+        <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-primary-red text-2xl mb-6 mx-auto">
+          <i class="fas fa-truck-loading"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 serif">Fast Claims Processing</h3>
+        <p class="text-gray-500 text-sm">We work with carriers known for fast, fair flood claims processing so you can rebuild and recover quickly after a flood event.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Coverage Highlights -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">COVERAGE OPTIONS</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">What's Covered in Your Flood Policy</h2>
+      <p class="text-gray-600">Flood insurance protects your home and belongings from flood-related damage. Understanding what's covered helps you choose the right policy.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-home text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Building / Structure Coverage</h3>
+          <p class="text-gray-600 text-sm">Covers the physical structure of your home including foundation, electrical, plumbing, HVAC, and built-in appliances up to the policy limit.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-boxes text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Personal Property / Contents</h3>
+          <p class="text-gray-600 text-sm">Covers your belongings — furniture, electronics, clothing, and personal items — from flood damage, typically up to 40-50% of structure coverage.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-water text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Storm Surge Damage</h3>
+          <p class="text-gray-600 text-sm">Flood insurance covers storm surge damage, which is the #1 flood threat in coastal Florida during hurricanes and tropical storms.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-cloud-rain text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Heavy Rainfall Flooding</h3>
+          <p class="text-gray-600 text-sm">Covers flooding from excessive rain, whether from storms or prolonged rainfall events that overwhelm drainage systems.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-water-arrow-up text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Overflow from Rivers & Lakes</h3>
+          <p class="text-gray-600 text-sm">Covers flooding when rivers, lakes, or streams overflow their banks, including inland flooding events common after heavy rains.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-bath text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Sewer Backup (with endorsement)</h3>
+          <p class="text-gray-600 text-sm">Optional coverage for damage caused by sewer or drain backup, which may occur during flooding events. Not always included automatically.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-vector-square text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Basement / Foundation Coverage</h3>
+          <p class="text-gray-600 text-sm">Covers flood damage to basement interiors, including walls, floors, and equipment located below grade level.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-fan text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">HVAC & Appliances</h3>
+          <p class="text-gray-600 text-sm">Flood policies cover heating, ventilation, air conditioning systems, and major appliances damaged by flooding.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-bolt text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Electrical & Plumbing Systems</h3>
+          <p class="text-gray-600 text-sm">Covers repairs to electrical systems, plumbing, and fixtures damaged by floodwaters, including wiring and pipe systems.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-warehouse text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Detached Garage Coverage</h3>
+          <p class="text-gray-600 text-sm">Flood insurance covers detached structures like garages, sheds, and fences (typically up to 10% of main building coverage).</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-briefcase text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Business Interruption (Commercial)</h3>
+          <p class="text-gray-600 text-sm">Commercial flood policies can include business income coverage to help cover lost revenue if flooding forces you to close temporarily.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
+        <i class="fas fa-file-invoice-dollar text-primary-red text-2xl w-10 mt-1"></i>
+        <div class="ml-4">
+          <h3 class="text-lg font-bold serif mb-2">Replacement Cost Coverage</h3>
+          <p class="text-gray-600 text-sm">Some private flood policies offer replacement cost coverage (rather than actual cash value) for newer homes and buildings.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a href="#" class="bg-primary-red text-white px-8 py-3.5 rounded font-bold hover:bg-red-800 transition inline-block">
+        Get a Free Quote
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">TESTIMONIALS</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">What Our Customers Say</h2>
+      <p class="text-gray-600">Join thousands of Florida homeowners who trust us with their flood insurance needs.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"Our neighborhood flooded during Hurricane Ian. Thank goodness we had flood insurance through FreedmanBrokerInsurance. The claim was processed quickly and we were able to rebuild."</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Patricia M.</div>
+            <div class="text-xs text-gray-500">Fort Myers, FL</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"Living in a flood zone, this insurance is a must-have. The agent explained everything clearly and found us private coverage cheaper than NFIP."</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Lisa R.</div>
+            <div class="text-xs text-gray-500">Tampa, FL</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="text-gray-700 mb-6 italic">"I didn't realize my homeowner's policy didn't include floods until I asked. Got same-day coverage and peace of mind. Great service!"</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <div class="font-bold text-dark-blue">Kevin S.</div>
+            <div class="text-xs text-gray-500">Jacksonville, FL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA with Form -->
+<section class="bg-[#0d152e] text-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="w-full md:w-1/2">
+        <span class="inline-block border border-gray-600 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-white/5">FREE QUOTE</span>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 serif">Don't Wait Until It's Too Late</h2>
+        <p class="text-gray-300 mb-8 text-lg">Get a free flood insurance quote today. Remember: there's a 30-day waiting period before coverage begins, so don't wait for a storm to approach.</p>
+        
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Both NFIP and private flood options</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>Flood zone analysis and guidance</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-primary-red text-xl mr-3"></i>
+            <span>30-day waiting period applies — act now</span>
+          </div>
+        </div>
+        
+        <a href="tel:7865012059" class="bg-primary-red text-white px-8 py-4 rounded font-bold hover:bg-red-800 transition inline-flex items-center justify-center text-lg">
+          <i class="fas fa-phone-alt mr-3"></i> Call 1-800-FREEDOM
+        </a>
+      </div>
+      
+      <div class="w-full md:w-5/12">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 text-gray-800">
+          <h3 class="text-2xl font-bold mb-6 serif text-dark-blue">Get Your Free Flood Quote</h3>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Full Name</label>
+              <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="John Doe">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Email Address</label>
+              <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="john@example.com">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold mb-2">Phone</label>
+                <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="(555) 123-4567">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold mb-2">ZIP Code</label>
+                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none" placeholder="33101">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Property Type</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>Single Family Home</option>
+                <option>Condo/Townhome</option>
+                <option>Multi-Family Building</option>
+                <option>Business Property</option>
+                <option>Mobile Home</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Do you know your flood zone?</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>Yes, I know my flood zone</option>
+                <option>No, I need help determining my zone</option>
+                <option>Not sure - I think I'm in a high-risk area</option>
+                <option>Not sure - I think I'm in a low-to-moderate risk area</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Preferred Coverage Type</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 outline-none bg-white">
+                <option>NFIP (Government-backed)</option>
+                <option>Private Flood Insurance</option>
+                <option>I need help deciding</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-primary-red text-white py-4 rounded font-bold hover:bg-red-800 transition flex items-center justify-center">
+              Get My Free Quote <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+            <p class="text-xs text-gray-500 text-center">By submitting, you agree to our <a href="#" class="underline">Privacy Policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <span class="inline-block border border-red-200 text-primary-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 bg-red-50">FAQ</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 serif">Frequently Asked Questions</h2>
+      <p class="text-gray-600">Quick answers to common questions about flood insurance in Florida.</p>
+    </div>
+    
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Is flood insurance required in Florida?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>If you have a mortgage from a federally backed lender (FHA, VA, USDA, Freddie Mac, Fannie Mae) and live in a high-risk flood zone (AE, VE, V zones), flood insurance is required. However, Florida's flood risk is widespread — even moderate-risk areas flood 3x more often than wildfires or theft. It's highly recommended for all Florida homeowners.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 2 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">How much does flood insurance cost?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Cost varies based on your flood zone, home elevation, construction type, and coverage limits. The average NFIP policy in Florida is around $600-$900/year. Private flood insurance can be cheaper (sometimes 20-40% less) and offers higher limits. Get a personalized quote for exact pricing.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 3 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Is there a waiting period before coverage starts?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>Yes. NFIP policies have a mandatory 30-day waiting period before they take effect (with limited exceptions for mortgage closings). Private flood insurance often has shorter waiting periods, typically 10-14 days. **Don't wait for a storm to approach** — get covered before hurricane season.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 4 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">Does my homeowners insurance cover floods?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>No. Standard homeowners insurance policies specifically exclude damage caused by flooding (rising water from outside the home). You must purchase a separate flood insurance policy to be covered. Some policies may offer limited water backup coverage, but that's not the same as flood insurance.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 5 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">What's the difference between NFIP and private flood insurance?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>NFIP is the federal government's program with standardized rates and coverage limits (up to $250k for structure, $100k for contents). Private flood insurance often offers higher limits, broader coverage (like additional living expenses), faster claims processing, and sometimes lower premiums. We'll help you choose the best option for your needs.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 6 -->
+      <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.fa-chevron-down').classList.toggle('fa-rotate-180');">
+          <span class="font-bold text-lg serif">How do I know if I'm in a flood zone?</span>
+          <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600">
+          <p>You can check your flood zone through FEMA's Flood Map Service Center (msc.fema.gov) or by contacting our agents. We can look up your property's flood zone designation (AE, VE, X, etc.) and recommend appropriate coverage levels based on your risk level and mortgage requirements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div id="footer-container"></div>
+</body>
+</html>
