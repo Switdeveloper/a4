@@ -5,6 +5,9 @@ const CHATBOT_CONFIG = {
   welcomeMessage: "Hi! I'm your Freedman Insurance assistant. How can I help you today?"
 };
 
+// Global reference for template literal access
+const CHATBOT = CHATBOT_CONFIG;
+
 // Chatbot State
 let chatHistory = [];
 
